@@ -10,3 +10,4 @@ export const getAllTasks = () => tasksApi.get('/')
 
 export const createTask = (task:Task) => tasksApi.post('/', task)
 
+export const deleteTask = (id:Task) => tasksApi.delete(`/${id}`)

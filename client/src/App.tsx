@@ -15,6 +15,7 @@ export default function App({ }: Props) {
         <Route path='/' element={<Navigate to="/task" />} />
         <Route path='/task' element={<TaskPage />} />
         <Route path='/tasks-create' element={<TaskFormPage />} />
+        <Route path='/tasks/:id' element={<TaskFormPage />} />
       </Routes>
 
     </BrowserRouter>
